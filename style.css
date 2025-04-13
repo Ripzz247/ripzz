@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Tampilan Halaman Awal */
+.start-screen {
+  text-align: center;
+  background: linear-gradient(to top, #ff9a9e, #fad0c4);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  margin: auto;
+  animation: fadeIn 1s ease;
+}
+
+.start-screen h1 {
+  color: #f8077f; /* pink */
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.start-screen p {
+  font-size: 1.1em;
+  color: #444;
+  margin-bottom: 30px;
+  max-width: 80%;
+}
+
+.start-screen button {
+  padding: 15px 30px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ff5e78, #ff9a9e);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.start-screen button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff3f61, #ff7c8a);
+}
+
+/* Tampilan Ucapan */
+.card {
+  background: linear-gradient(to bottom right, #fff1eb, #ace0f9);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.card h1 {
+  color: #ff5e78;
+}
+
+.card p {
+  font-size: 1.1em;
+  color: #444;
+  margin: 15px 0;
+}
+
+.card img {
+  max-width: 100px;
+  margin: 10px;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
